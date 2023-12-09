@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetaMask Dashboard</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link
+      rel="stylesheet"
+      href="/Users/jagritiverma/Desktop/ZephyrShield/Visuals/styles.css"
+    />
+  </head>
+  <body>
+    <div id="connectButton" onclick="connectWallet()">Connect to Wallet</div>
+    <div id="dashboard">
+      <h2>Dashboard</h2>
+      <label for="receiverAddress">Receiver's Address:</label>
+      <input
+        type="text"
+        id="receiverAddress"
+        placeholder="Enter receiver's address"
+      />
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" placeholder="Enter amount" />
+      <button onclick="sendTransaction()">Send</button>
+      <div id="transactionHistory">
+        <h3>Transaction History</h3>
+        <!-- Transaction history will be displayed here -->
+      </div>
+    </div>
+    <script src="/Users/jagritiverma/Desktop/ZephyrShield/Visuals/script.js"></script>
+  </body>
+</html>
